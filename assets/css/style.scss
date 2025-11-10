@@ -254,9 +254,9 @@ body {
 
 /* Hard-limit ALL images inside footer, then the specific class */
 .site-footer img { 
-  height: 48px !important; 
+  height: 96px !important; 
   width: auto !important; 
-  max-height: 48px !important; 
+  max-height: 96px !important; 
   max-width: none !important; 
   display: block;
 }
