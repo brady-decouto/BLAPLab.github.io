@@ -1,4 +1,4 @@
-stheme: minima
+theme: minima
 url: https://brady-decouto.github.io
 baseurl: /BLAPLab.github.io
 
@@ -6,7 +6,3 @@ header_pages:
   - index.md
   - projects.md
   - people.md
-  # add these as you create them:
-  # - projects.md
-  # - publications.md
-  # - contact.md
