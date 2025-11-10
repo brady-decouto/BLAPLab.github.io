@@ -35,3 +35,10 @@ permalink: /projects/
   </div>
   <img src="{{ '/assets/img/tsavvy.png' | relative_url }}" alt="Tech-savviness project">
 </div>
+
+
+/* Make footer sit at bottom even on short pages */
+html, body { height: 100%; }
+body { display: flex; flex-direction: column; }
+.page-content { flex: 1 0 auto; }
+.site-footer { flex-shrink: 0; }
