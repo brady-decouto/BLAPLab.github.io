@@ -1,6 +1,8 @@
 <header class="site-header" role="banner">
-  <a href="{{ site.baseurl }}/">
-    <img src="{{ site.baseurl }}/assets/img/blap_logo.png" alt="BLAP Lab logo">
-  </a>
-  {%- include nav.html -%}
+  <div class="wrapper">
+    <a class="site-logo" href="{{ "/" | relative_url }}">
+      <img src="{{ "/assets/img/blap_logo.png" | relative_url }}" alt="BLAP Lab logo">
+    </a>
+    {% include nav.html %}
+  </div>
 </header>
