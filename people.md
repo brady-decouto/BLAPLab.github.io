@@ -9,10 +9,10 @@ permalink: /people/
 <div class="person">
   <img src="{{ '/assets/img/DeCouto.png' | relative_url }}" alt="Dr. Brady DeCouto">
   <div class="person-text">
-    <strong>Dr. Brady DeCouto</strong>  
-    <em>Assistant Professor, Florida State University</em>  
+    <h2 class="person-name">Dr. Brady DeCouto</h2>
+    <h3 class="person-title">Assistant Professor, Florida State University</h3>
     <p>
-    Dr. DeCouto directs the Brain, Learning, Attention & Performance (BLAP) Lab, where his research examines motor learning, neurofeedback, and human performance using psychophysiological measurements (e.g., EEG, eye-tracking, heart rate). His current projects explore how emerging assistive technologies influence cognition, attention, and learning during perceptual-motor tasks.
+Brady is fascinated by the interaction between technologies and human cognition. Brady has applied his research background concerning the science of expertise (e.g., attention in high-level athletes, skill learning, talent identification) to technological domains, including AI, exoskeletons, and brain-computer interfaces (BCIs), to uncover how to best measure and optimize complex cognitive and emotional processes at play during learning and performance. Brady is passionate about the use of biometric data in human science.
     </p>
   </div>
 </div>
@@ -20,11 +20,9 @@ permalink: /people/
 ---
 
 ## PhD & Thesis Students
-
 _Coming soon._
 
 ---
 
 ## Research Assistants
-
 _Coming soon._
