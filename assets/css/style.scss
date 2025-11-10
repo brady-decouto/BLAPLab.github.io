@@ -236,8 +236,8 @@ body {
 .site-footer {
   background: #f1ecff; /* same light purple header tone */
   border-top: 1px solid #d8d8d8;
-  padding: 40px 0 60px; /* extra bottom space */
-  margin-top: 80px;     /* pushes footer away from content */
+  padding: 40px 0 60px;
+  margin-top: 80px;
   color: #111;
 }
 
@@ -247,38 +247,51 @@ body {
   padding: 0 20px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 20px;
 }
 
-.footer-left {
-  flex: 0 0 auto;
+/* Left (logo) and right (text) sides */
+.footer-left, .footer-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
+/* Make logo visually match text block height */
 .fsu-logo {
-  max-height: 90px; /* adjust for size */
+  max-height: 85px; /* adjust to match text visually */
   width: auto;
   display: block;
+  margin-right: 20px;
 }
 
 .footer-right {
-  flex: 1 1 300px;
+  flex-direction: column;
+  text-align: left;
   font-size: 0.95rem;
-  line-height: 1.5;
+  line-height: 1.45;
+  max-width: 380px; /* keep text compact beside the logo */
 }
 
-/* On small screens, center the layout */
+/* On small screens, stack logo above address */
 @media (max-width: 750px) {
   .footer-wrapper {
     flex-direction: column;
     text-align: center;
   }
+  .footer-right {
+    max-width: none;
+    align-items: center;
+  }
   .fsu-logo {
-    max-height: 80px;
+    margin-right: 0;
     margin-bottom: 10px;
+    max-height: 70px;
   }
 }
+
 
 
 .publications a:hover {
