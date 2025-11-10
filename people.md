@@ -5,6 +5,5 @@ permalink: /people/
 ---
 
 ## Dr. Brady DeCouto — Principal Investigator
-Short bio here.
-
-<!-- Add photos later:  ![Brady]({{ site.baseurl }}/assets/img/brady.jpg) -->
+Assistant Professor, Florida State University  
+Research interests: 
