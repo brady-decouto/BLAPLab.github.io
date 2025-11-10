@@ -4,8 +4,6 @@ title: Projects
 permalink: /projects/
 ---
 
-Below are active and recent projects from the BLAP Lab. Click any project to learn more.
-
 ### Active Projects
 - **Neurofeedback Scheduling in Skill Learning**  
   Biofeedback technologies readily provide massive amounts of biometric data to individuals, but less is known about how frequently such feedback should be delivered for optimal learning or health outcomes. In this internally funded work in collaboration with i-BrainTech, we are investigating the impact of different neurofeedback schedules on skill learning in a brain-computer interface (BCI).
