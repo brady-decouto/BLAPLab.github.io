@@ -1,11 +1,11 @@
 ---
-# required so Jekyll compiles SCSS → CSS
+# Jekyll needs this front matter to compile SCSS
 ---
 
-/* ====== COLOR & TYPOGRAPHY ====== */
-$bg: #cfcfcf;         /* darker grey everywhere */
-$header: #c7c7c7;     /* slightly darker strip for header */
-$text: #111;          /* near-black for contrast */
+/* ===== Colors & base ===== */
+$bg: #f1f1f1;      /* page background */
+$header: #ffffff;  /* white header bar */
+$text: #111;
 
 html, body { height: 100%; }
 body {
@@ -16,55 +16,67 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Constrain content width for readability on desktop */
-.wrapper {
-  max-width: 980px;         /* ~70–80 chars per line */
-  padding: 0 20px;
-  margin: 0 auto;
-}
+/* readable width */
+.wrapper { max-width: 980px; padding: 0 20px; margin: 0 auto; }
 
-/* ====== HEADER / NAV ====== */
+/* ===== Header ===== */
 .site-header {
   background: $header;
-  border-bottom: 1px solid darken($header, 8%);
+  border-bottom: 1px solid #ddd;
 }
-.site-header .wrapper {
+.header-inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
 }
 
-/* Logo */
+/* Logo a bit bigger */
 .site-logo img {
-  max-height: 110px;
+  max-height: 140px;   /* ↑ increase */
   width: auto;
   display: block;
-
-  /* Quick fix for white-boxed logo on grey header:
-     “multiply” blends the white into the grey. */
+  /* If your PNG still has a white box, blend it until you upload a transparent PNG */
   mix-blend-mode: multiply;
 }
 
-/* Minima nav cleanup */
-.site-nav { text-align: right; }
-.site-nav .page-link { margin-left: 1rem; }
+/* ===== Nav (centered, all-caps, stylistic font) ===== */
+.site-nav {
+  flex: 1 1 auto;
+}
+.site-nav .trigger {
+  display: flex;
+  justify-content: center;     /* center the links */
+  align-items: center;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+  font-family: "Oswald", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  text-transform: uppercase;   /* ALL CAPS */
+  letter-spacing: 0.06em;
+}
+.page-link {
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+}
+.page-link:hover { text-decoration: underline; }
 
-/* Hide the stray checkbox; use it only for small screens */
-.nav-trigger { display: none; }
-.site-nav label { display: none; }
+/* Hide checkbox on desktop */
+.nav-trigger, .nav-label { display: none; }
 
-/* Mobile nav: show hamburger, stack links */
+/* Mobile layout */
 @media (max-width: 750px) {
-  .site-header .wrapper { flex-wrap: wrap; }
-  .site-nav {
-    width: 100%;
-  }
-  .site-nav label { display: inline-block; cursor: pointer; }
-  .site-nav .trigger { display: none; margin-top: .5rem; }
-  .nav-trigger:checked ~ .trigger { display: block; }
-  .site-nav .page-link { display: inline-block; margin: .25rem .75rem .25rem 0; }
+  .header-inner { flex-wrap: wrap; }
+  .site-logo img { max-height: 100px; }
+  .nav-label { display: inline-block; margin-left: auto; cursor: pointer; }
+  .site-nav .trigger { display: none; width: 100%; justify-content: flex-start; }
+  .nav-trigger:checked ~ .trigger { display: flex; }
 }
 
-/* Make *everything* carry the grey, not white cards */
+/* ensure page + footer inherit bg */
 .page-content, .site-footer { background: $bg; }
+
+/* People page image style */
+.profile {
+  display:block; max-width: 220px; border-radius: 8px; margin: 0 0 12px 0;
+}
