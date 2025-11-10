@@ -103,27 +103,45 @@ body {
   }
 }
 
-/* ===== PEOPLE PAGE LAYOUT ===== */
+/* ===== PEOPLE PAGE (refined layout) ===== */
 .person {
   display: flex;
   align-items: flex-start;
   gap: 20px;
-  margin-bottom: 30px;
-  background: rgba(255, 255, 255, 0.6);
-  padding: 15px;
-  border-radius: 8px;
+  margin-bottom: 40px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
 }
 
 .person img {
-  max-width: 220px;
-  border-radius: 10px;
+  max-width: 160px;        /* ⬅ smaller photo */
+  height: auto;
+  border-radius: 8px;       /* soft corners */
+  object-fit: cover;
 }
 
 .person-text {
   flex: 1;
 }
 
-/* ===== PAGE & FOOTER ===== */
-.page-content, .site-footer {
-  background: $bg;
+.person-name {
+  margin: 0;
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.person-title {
+  margin: 5px 0 10px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #222;
+}
+
+.person p {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.55;
 }
