@@ -231,6 +231,56 @@ body {
   text-decoration: none;
 }
 
+
+/* ===== FOOTER ===== */
+.site-footer {
+  background: #f1ecff; /* same light purple header tone */
+  border-top: 1px solid #d8d8d8;
+  padding: 40px 0 60px; /* extra bottom space */
+  margin-top: 80px;     /* pushes footer away from content */
+  color: #111;
+}
+
+.footer-wrapper {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.footer-left {
+  flex: 0 0 auto;
+}
+
+.fsu-logo {
+  max-height: 90px; /* adjust for size */
+  width: auto;
+  display: block;
+}
+
+.footer-right {
+  flex: 1 1 300px;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* On small screens, center the layout */
+@media (max-width: 750px) {
+  .footer-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+  .fsu-logo {
+    max-height: 80px;
+    margin-bottom: 10px;
+  }
+}
+
+
 .publications a:hover {
   text-decoration: underline;
 }
