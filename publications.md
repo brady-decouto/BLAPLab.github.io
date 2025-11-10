@@ -21,6 +21,12 @@ permalink: /publications/
 <p>Fawver, B., Taylor, S., <strong>DeCouto, B. S.</strong>, Cowan, R. L., Lohse, K. R., Williams, A. M., & Podlog, L. (2023). Tracing burnout during adolescence to past sports experiences: A retrospective analysis of sport-specific antecedents among alpine ski racers. <em>Journal of Cartilage & Joint Preservation</em>, 3(3), 100142. <a href="https://doi.org/10.1016/j.jcjp.2023.100142" target="_blank">https://doi.org/10.1016/j.jcjp.2023.100142</a></p>
 
 
+/* Make footer sit at bottom even on short pages */
+html, body { height: 100%; }
+body { display: flex; flex-direction: column; }
+.page-content { flex: 1 0 auto; }
+.site-footer { flex-shrink: 0; }
+
 <p>Williams, A. M., <strong>DeCouto, B. S.</strong>, Teoldo, I., & Vater, C. (2025). Gaze behavior and expert performance in sport. In <em>Gaze and Visual Perception in Sport</em> (pp. 59–76). Routledge.</p>
 
 </div>
