@@ -1,3 +1,11 @@
 title: BLAP Lab
-description: Brain, Learning, Attention & Performance Lab
-theme: minima   # easy built-in theme; you can change later
+description: Brain, Learning, Attention & Performance Lab at FSU
+theme: minima
+
+# Because this is a project site (URL has /BLAPLab.github.io/)
+url: https://brady-decouto.github.io
+baseurl: /BLAPLab.github.io
+
+# simple nav using minima
+header_pages:
+  - people.md
