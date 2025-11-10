@@ -104,6 +104,25 @@ body {
   }
 }
 
+/* ===== HOME PAGE CONTENT BLOCK ===== */
+.home-content {
+  background: #ffffff;
+  color: #000000;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+  max-width: 850px;
+  margin: 40px auto;
+  line-height: 1.6;
+}
+.home-content h2 {
+  margin-top: 0;
+  font-size: 1.8rem;
+  font-weight: 800;
+}
+
+
+
 /* ===== PEOPLE PAGE (refined layout) ===== */
 .person {
   display: flex;
