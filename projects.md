@@ -18,7 +18,7 @@ permalink: /projects/
   <div class="project-text">
     <h3 class="project-title">Movement-Assistive Robotics in Motor Learning</h3>
     <p>
-      Movement-assistive robotics such as exoskeletons hold great promise for rehabilitation contexts, but they have primarily been studied with walking, which can be categorized as a highly complex movement skill that most users are already skilled at. In this NSF-funded work, we simplify the problem space by studying how intelligent movement-assistive robotics can be used to improve the learning of a unicycle (a balance-related skill like walking, but few people are skilled at).
+      Movement-assistive robotics such as exoskeletons hold great promise for rehabilitation contexts, but they have primarily been studied with walking, which can be categorized as a highly complex movement skill that most users are already skilled at. In this NSF-funded collaborative work with FAMU-FSU College of Engineering and Georgia Tech, we simplify the problem space by studying how intelligent movement-assistive robotics can be used to improve the learning of a unicycle (a balance-related skill like walking, but few people are skilled at).
       <br><br>
       <a href="https://www.youtube.com/watch?v=X_xns_ObqB0" target="_blank" rel="noopener">Watch a short clip ↗</a>
     </p>
