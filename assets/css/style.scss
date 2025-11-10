@@ -232,7 +232,7 @@ body {
 }
 
 
-/* ===== FOOTER (tight sizing) ===== */
+/* ===== FOOTER (hard size cap) ===== */
 .site-footer {
   background: #f1ecff;
   border-top: 1px solid #d8d8d8;
@@ -252,31 +252,30 @@ body {
   justify-content: flex-start;
 }
 
-/* Make the logo match the text block height */
-.fsu-logo {
-  max-height: 48px !important;   /* <- adjust size here */
-  height: 48px !important;        /* lock the height */
-  width: auto !important;         /* keep aspect ratio */
+/* Hard-limit ALL images inside footer, then the specific class */
+.site-footer img { 
+  height: 48px !important; 
+  width: auto !important; 
+  max-height: 48px !important; 
+  max-width: none !important; 
   display: block;
 }
+.site-footer img.fsu-logo {
+  height: 48px !important;
+  width: auto !important;
+  max-height: 48px !important;
+}
 
+/* Text block */
 .footer-right {
   font-size: 0.95rem;
   line-height: 1.45;
-  max-width: 520px;               /* keeps text from sprawling */
+  max-width: 520px;
 }
 
-/* Mobile: stack neatly */
+/* Mobile */
 @media (max-width: 750px) {
-  .footer-wrapper {
-    flex-direction: column;
-    text-align: center;
-  }
+  .footer-wrapper { flex-direction: column; text-align: center; }
   .footer-right { max-width: 90%; }
 }
 
-
-
-.publications a:hover {
-  text-decoration: underline;
-}
