@@ -1,8 +1,70 @@
 ---
+# required so Jekyll compiles SCSS → CSS
 ---
 
-body { background:#f3f3f3; color:#111; }
-.site-header { background:#e6e6e6; border-bottom:1px solid #d3d3d3; }
-.site-header .wrapper { display:flex; align-items:center; justify-content:space-between; gap:1rem; }
-.site-logo img { max-height:110px; width:auto; display:block; }
-.site-nav .page-link { margin-left:1rem; }
+/* ====== COLOR & TYPOGRAPHY ====== */
+$bg: #cfcfcf;         /* darker grey everywhere */
+$header: #c7c7c7;     /* slightly darker strip for header */
+$text: #111;          /* near-black for contrast */
+
+html, body { height: 100%; }
+body {
+  background: $bg;
+  color: $text;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Constrain content width for readability on desktop */
+.wrapper {
+  max-width: 980px;         /* ~70–80 chars per line */
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+/* ====== HEADER / NAV ====== */
+.site-header {
+  background: $header;
+  border-bottom: 1px solid darken($header, 8%);
+}
+.site-header .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+/* Logo */
+.site-logo img {
+  max-height: 110px;
+  width: auto;
+  display: block;
+
+  /* Quick fix for white-boxed logo on grey header:
+     “multiply” blends the white into the grey. */
+  mix-blend-mode: multiply;
+}
+
+/* Minima nav cleanup */
+.site-nav { text-align: right; }
+.site-nav .page-link { margin-left: 1rem; }
+
+/* Hide the stray checkbox; use it only for small screens */
+.nav-trigger { display: none; }
+.site-nav label { display: none; }
+
+/* Mobile nav: show hamburger, stack links */
+@media (max-width: 750px) {
+  .site-header .wrapper { flex-wrap: wrap; }
+  .site-nav {
+    width: 100%;
+  }
+  .site-nav label { display: inline-block; cursor: pointer; }
+  .site-nav .trigger { display: none; margin-top: .5rem; }
+  .nav-trigger:checked ~ .trigger { display: block; }
+  .site-nav .page-link { display: inline-block; margin: .25rem .75rem .25rem 0; }
+}
+
+/* Make *everything* carry the grey, not white cards */
+.page-content, .site-footer { background: $bg; }
