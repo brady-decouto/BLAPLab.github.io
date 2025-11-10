@@ -1,11 +1,9 @@
 ---
-layout: home   # or "default" if you add your own layout
-title: Welcome
+layout: home
+title: BLAP Lab
 ---
 
-# Welcome to the BLAP Lab
-This is our new lab site. Use Markdown to add content, images, and links.
+# Brain, Learning, Attention & Performance Lab
+We study motor learning, neurofeedback, and human performance at Florida State University.
 
-- Projects
-- Publications
-- People
+[People]({{ site.baseurl }}/people/)
