@@ -232,11 +232,11 @@ body {
 }
 
 
-/* ===== FOOTER ===== */
+/* ===== FOOTER (tight sizing) ===== */
 .site-footer {
-  background: #f1ecff; /* same light purple header tone */
+  background: #f1ecff;
   border-top: 1px solid #d8d8d8;
-  padding: 40px 0 60px;
+  padding: 32px 0 48px;
   margin-top: 80px;
   color: #111;
 }
@@ -247,49 +247,32 @@ body {
   padding: 0 20px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  gap: 16px;
   flex-wrap: wrap;
-  gap: 20px;
+  justify-content: flex-start;
 }
 
-/* Left (logo) and right (text) sides */
-.footer-left, .footer-right {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-/* Make logo visually match text block height */
+/* Make the logo match the text block height */
 .fsu-logo {
-  max-height: 85px; /* adjust to match text visually */
-  width: auto;
+  max-height: 48px !important;   /* <- adjust size here */
+  height: 48px !important;        /* lock the height */
+  width: auto !important;         /* keep aspect ratio */
   display: block;
-  margin-right: 20px;
 }
 
 .footer-right {
-  flex-direction: column;
-  text-align: left;
   font-size: 0.95rem;
   line-height: 1.45;
-  max-width: 380px; /* keep text compact beside the logo */
+  max-width: 520px;               /* keeps text from sprawling */
 }
 
-/* On small screens, stack logo above address */
+/* Mobile: stack neatly */
 @media (max-width: 750px) {
   .footer-wrapper {
     flex-direction: column;
     text-align: center;
   }
-  .footer-right {
-    max-width: none;
-    align-items: center;
-  }
-  .fsu-logo {
-    margin-right: 0;
-    margin-bottom: 10px;
-    max-height: 70px;
-  }
+  .footer-right { max-width: 90%; }
 }
 
 
