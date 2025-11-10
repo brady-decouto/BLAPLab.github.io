@@ -1,0 +1,40 @@
+---
+# Jekyll front matter (required)
+---
+
+/* GLOBAL BACKGROUND + FONT COLOR */
+body {
+  background-color: #f3f3f3; /* soft grey */
+  color: #111;
+}
+
+/* HEADER BANNER */
+.site-header {
+  background-color: #e2e2e2; /* slightly darker grey banner */
+  padding: 1.2rem 0;
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+}
+
+/* LOGO IMAGE */
+.site-header img {
+  max-height: 110px;
+  width: auto;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* OPTIONAL: Move nav under logo and center it */
+.site-nav {
+  margin-top: 0.5rem;
+  text-align: center;
+}
+.site-nav a {
+  color: #000 !important;
+  font-weight: 500;
+  text-decoration: none;
+  margin: 0 1rem;
+}
+.site-nav a:hover {
+  text-decoration: underline;
+}
