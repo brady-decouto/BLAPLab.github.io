@@ -4,11 +4,13 @@ title: Publications
 permalink: /publications/
 ---
 
-## Publications
+## Recent Publications
 
 <div class="publications">
 
 <p>Cocić, D., <strong>DeCouto, B. S.</strong>, Fawver, B., Cowan, R. L., Hendry, D. T., Williams, A. M., & Bilalić, M. (2025). Grit subcomponents are differentially associated with practice trajectories underlying expertise development. <em>Scientific Reports</em>, 15(1), 37812.</p>
+
+<p>Williams, A. M., <strong>DeCouto, B. S.</strong>, Teoldo, I., & Vater, C. (2025). Gaze behavior and expert performance in sport. In <em>Gaze and Visual Perception in Sport</em> (pp. 59–76). Routledge.</p>
 
 <p><strong>DeCouto, B. S.</strong>, Bilalić, M., & Williams, A. M. (2024). Neuroimaging and perceptual-cognitive expertise in sport: A narrative review of research and future directions. <em>Neuropsychologia</em>, 109032. <a href="https://doi.org/10.1016/j.neuropsychologia.2024.109032" target="_blank">https://doi.org/10.1016/j.neuropsychologia.2024.109032</a></p>
 
@@ -20,14 +22,6 @@ permalink: /publications/
 
 <p>Fawver, B., Taylor, S., <strong>DeCouto, B. S.</strong>, Cowan, R. L., Lohse, K. R., Williams, A. M., & Podlog, L. (2023). Tracing burnout during adolescence to past sports experiences: A retrospective analysis of sport-specific antecedents among alpine ski racers. <em>Journal of Cartilage & Joint Preservation</em>, 3(3), 100142. <a href="https://doi.org/10.1016/j.jcjp.2023.100142" target="_blank">https://doi.org/10.1016/j.jcjp.2023.100142</a></p>
 
-
-/* Make footer sit at bottom even on short pages */
-html, body { height: 100%; }
-body { display: flex; flex-direction: column; }
-.page-content { flex: 1 0 auto; }
-.site-footer { flex-shrink: 0; }
-
-<p>Williams, A. M., <strong>DeCouto, B. S.</strong>, Teoldo, I., & Vater, C. (2025). Gaze behavior and expert performance in sport. In <em>Gaze and Visual Perception in Sport</em> (pp. 59–76). Routledge.</p>
 
 </div>
 
