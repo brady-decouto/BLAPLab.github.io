@@ -12,6 +12,11 @@ html, body {
   height: 100%;
 }
 
+/* GLOBAL FONT SIZE BOOST */
+html {
+  font-size: 18px;  /* default is ~16px → this is about +2 points */
+}
+
 body {
   background: $bg;
   color: $text;
@@ -193,28 +198,39 @@ body {
 .person-text p { margin-bottom: 0; }
 
 
-/* ===== PERSON BUTTONS ===== */
+/* ===== ENLARGED PI BUTTONS ===== */
 .person-actions {
   display: flex;
-  gap: 12px;
-  margin-top: 16px;
+  gap: 16px;
+  margin-top: 20px;
   flex-wrap: wrap;
 }
 
 .person-actions .btn {
-  border: 2px solid #111;
-  padding: 8px 16px;
-  border-radius: 10px;
-  background: transparent;
-  color: #111;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #ffffff;
+  border: 3px solid #8a2be2;  /* purple border to match your theme */
+  color: #8a2be2;
+  
+  width: 110px;     /* square-ish shape */
+  height: 110px;    /* square-ish shape */
+  border-radius: 14px;
+
+  font-size: 1.05rem;
+  font-weight: 700;
   text-decoration: none;
-  font-weight: 600;
-  transition: 0.2s ease;
+
+  transition: all 0.2s ease-in-out;
 }
 
 .person-actions .btn:hover {
-  background: #111;
-  color: #fff;
+  background: #8a2be2;
+  color: white;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
 }
 
 
