@@ -162,6 +162,19 @@ body {
   object-fit: cover;
 }
 
+/* --- PI card: stretch children & enlarge image --- */
+.person.pi {
+  align-items: stretch;    /* text + image share full card height */
+}
+
+.person.pi img {
+  max-width: 220px;        /* slightly wider than others */
+  height: 100%;            /* fill the full height of the card */
+  object-fit: cover;       /* crop nicely if needed */
+  border-radius: 10px;
+}
+
+
 .person-text {
   flex: 1;
 }
