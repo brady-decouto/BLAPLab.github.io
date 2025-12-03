@@ -134,6 +134,16 @@ body {
 
 
 /* ===== PEOPLE PAGE (refined layout) ===== */
+
+/* ----- PI Photo: Larger and matched to text height ----- */
+.person.pi img {
+  max-width: 220px;        /* larger than others */
+  height: 100%;            /* match the height of the text column */
+  object-fit: cover;       /* crop gracefully if needed */
+  align-self: stretch;     /* ensures it fills full height of the card */
+  border-radius: 10px;
+}
+
 .person {
   display: flex;
   align-items: flex-start;
@@ -203,10 +213,10 @@ body {
 .person-text p { margin-bottom: 0; }
 
 
-/* ===== ENLARGED PI BUTTONS ===== */
+/* ===== PI BUTTONS – smaller rectangles, auto-width ===== */
 .person-actions {
   display: flex;
-  gap: 16px;
+  gap: 12px;
   margin-top: 20px;
   flex-wrap: wrap;
 }
@@ -217,27 +227,27 @@ body {
   justify-content: center;
 
   background: #ffffff;
-  border: 3px solid #8a2be2;
+  border: 2px solid #8a2be2;
   color: #8a2be2;
 
-  padding: 10px 22px;     /* controls size instead of fixed width/height */
-  border-radius: 12px;    /* rounded rectangle */
+  padding: 6px 18px;        /* shorter + narrower → smaller rectangle */
+  border-radius: 10px;      /* rectangular, lightly rounded corners */
 
-  font-size: 1.05rem;
+  font-size: 0.95rem;
   font-weight: 700;
   text-decoration: none;
 
   transition: all 0.2s ease-in-out;
-  min-width: 110px;       /* keeps them roughly same width */
+  /* no min-width → each button fits its own text */
 }
-
 
 .person-actions .btn:hover {
   background: #8a2be2;
-  color: white;
-  transform: translateY(-3px);
-  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
 }
+
 
 
 /* ===== PROJECTS PAGE (image on the right) ===== */
