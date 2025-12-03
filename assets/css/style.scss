@@ -166,6 +166,33 @@ body {
   line-height: 1.55;
 }
 
+
+/* ===== COLOR-CODED PERSON CARDS ===== */
+
+/* Principal Investigator */
+.person.pi {
+  background: #ffffff;
+  border-left: 6px solid #8a2be2; /* vivid purple */
+}
+
+/* PhD / Thesis Students */
+.person.grad {
+  background: #f9f5ff;
+  border-left: 6px solid #a678f0;
+}
+
+/* Research Assistants */
+.person.ra {
+  background: #f7f9ff;
+  border-left: 6px solid #5c85ff;
+}
+
+/* common tweaks */
+.person { margin-bottom: 24px; padding: 18px; border-radius: 10px; }
+.person-text h2 { margin-top: 0; font-size: 1.3rem; font-weight: 700; }
+.person-text p { margin-bottom: 0; }
+
+
 /* ===== PROJECTS PAGE (image on the right) ===== */
 .project {
   display: flex;
