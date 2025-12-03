@@ -17,7 +17,7 @@ permalink: /people/
     <div class="person-actions">
   <a class="btn" href="https://scholar.google.com/citations?user=GR4n1yEAAAAJ&hl=en&oi=ao" target="_blank" rel="noopener">Scholar</a>
 
-  <a class="btn" href="{{ '/assets/docs/DeCouto_CV.pdf' | relative_url }}" download>CV</a>
+  <a class="btn" href="{{ '/assets/docs/Decouto_CV.pdf' | relative_url }}" download>CV</a>
 </div>
   </div>
 </div>
