@@ -217,19 +217,20 @@ body {
   justify-content: center;
 
   background: #ffffff;
-  border: 3px solid #8a2be2;  /* purple border to match your theme */
+  border: 3px solid #8a2be2;
   color: #8a2be2;
-  
-  width: 110px;     /* square-ish shape */
-  height: 110px;    /* square-ish shape */
-  border-radius: 14px;
+
+  padding: 10px 22px;     /* controls size instead of fixed width/height */
+  border-radius: 12px;    /* rounded rectangle */
 
   font-size: 1.05rem;
   font-weight: 700;
   text-decoration: none;
 
   transition: all 0.2s ease-in-out;
+  min-width: 110px;       /* keeps them roughly same width */
 }
+
 
 .person-actions .btn:hover {
   background: #8a2be2;
