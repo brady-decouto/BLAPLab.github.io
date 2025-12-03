@@ -193,6 +193,31 @@ body {
 .person-text p { margin-bottom: 0; }
 
 
+/* ===== PERSON BUTTONS ===== */
+.person-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 16px;
+  flex-wrap: wrap;
+}
+
+.person-actions .btn {
+  border: 2px solid #111;
+  padding: 8px 16px;
+  border-radius: 10px;
+  background: transparent;
+  color: #111;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.2s ease;
+}
+
+.person-actions .btn:hover {
+  background: #111;
+  color: #fff;
+}
+
+
 /* ===== PROJECTS PAGE (image on the right) ===== */
 .project {
   display: flex;
