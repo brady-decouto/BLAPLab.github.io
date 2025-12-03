@@ -164,6 +164,18 @@ body {
   line-height: 1.2;
 }
 
+/* Make PI name larger */
+.person.pi .person-name {
+  font-size: 1.9rem;
+}
+
+/* Make all students & RA names smaller */
+.person.grad .person-name,
+.person.ra .person-name {
+  font-size: 1.3rem;
+}
+
+
 .person-title {
   margin: 5px 0 10px;
   font-size: 1.1rem;
