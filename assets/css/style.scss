@@ -147,11 +147,12 @@ body {
 }
 
 .person img {
-  max-width: 160px;        /* default size for students / RAs */
+  max-width: 230px;
   height: auto;
-  border-radius: 8px;       /* soft corners */
+  border-radius: 8px;
   object-fit: cover;
 }
+
 
 .person-text {
   flex: 1;
@@ -196,12 +197,6 @@ body {
   align-items: stretch;            /* children share card height */
 }
 
-.person.pi img {
-  max-width: 230px;       /* larger than everyone else */
-  align-self: stretch;    /* stretch to match card/text height */
-  object-fit: cover;
-  border-radius: 10px;
-}
 
 /* --- PhD / Thesis Students --- */
 .person.grad {
