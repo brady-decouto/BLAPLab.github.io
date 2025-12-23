@@ -365,12 +365,14 @@ body {
 }
 
 /* FORCE all People-page card images to match PI size */
-.person > img {
-  width: 230px !important;
-  max-width: none !important;
-  height: 280px !important;     /* optional; change/remove if you want auto height */
-  object-fit: cover !important;
-  flex: 0 0 230px !important;
+.person img {
+  width: 230px;
+  height: auto;          /* let height scale naturally */
+  object-fit: contain;   /* no cropping */
+  border-radius: 8px;
+  flex: 0 0 230px;
+  background: #fff;      /* optional: avoids weird transparency edges */
 }
+
 
 
