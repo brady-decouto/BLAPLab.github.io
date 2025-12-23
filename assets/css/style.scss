@@ -147,11 +147,13 @@ body {
 }
 
 .person img {
-  max-width: 230px;
+  width: 230px;
   height: auto;
   border-radius: 8px;
   object-fit: cover;
+  flex: 0 0 230px;
 }
+
 
 
 .person-text {
