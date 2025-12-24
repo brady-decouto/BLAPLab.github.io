@@ -30,6 +30,22 @@ permalink: /people/
 
 ## PhD & Thesis Students
 
+<!-- Arfa Mubeen -->
+<div class="person grad">
+  <img src="{{ '/assets/img/Mubeen.png' | relative_url }}" alt="Arfa Mubeen">
+  <div class="person-text">
+    <h2 class="person-name">Arfa Mubeen, M.Phil.</h2>
+    <p>
+      Arfa is currently a first-year PhD student in Sport Psychology under the supervision 
+      of Dr. DeCouto, with a background in Psychology. Her research interests include motor 
+      learning, with a particular focus on the effectiveness of different types of assistance 
+      in the acquisition of motor skills. Her M.Phil. research focused on elite athletes, and
+      in her PhD, she plans to work with novice athletes. She is interested in applying her 
+      research to optimize skill learning and performance in sport and physical activity contexts. 
+    </p>
+  </div>
+</div>
+
 <!-- Johanna Glaaser -->
 <div class="person grad">
   <img src="{{ '/assets/img/Glaaser.png' | relative_url }}" alt="Johanna Glaaser">
@@ -79,15 +95,6 @@ permalink: /people/
   </div>
 </div>
 
-<!-- Arfa Mubeen -->
-<div class="person grad">
-  <img src="{{ '/assets/img/placeholder.png' | relative_url }}" alt="Arfa Mubeen">
-  <div class="person-text">
-    <h2 class="person-name">Arfa Mubeen, M.S.</h2>
-    <p></p>
-  </div>
-</div>
-
 
 <!-- Alec Treacy -->
 <div class="person grad">
@@ -102,8 +109,26 @@ permalink: /people/
 
 ## Research Assistants
 
+<!-- Elita Odartei -->
+<div class="person ra">
+  <img src="{{ '/assets/img/Odartei.png' | relative_url }}" alt="Elita Odartei">
+  <div class="person-text">
+    <h2 class="person-name">Elita Odartei, B.S.</h2>
+    <p>
+      Elita Odartei is a second-year master’s student in the Florida State University
+      Sport Psychology program. With a background in neuroscience, her current research
+      interests include the utilization of neurofeedback technology to elevate performance outcomes, 
+      the intersection of art and performance psychology, and traumatic brain injury prevention
+      and rehabilitation among marginalized athletic populations. Elita is committed to advancing
+      empirically grounded, holistic approaches to mental health, performance, and wellness across
+      youth, collegiate, and professional sport settings to promote comprehensive care for all. 
+    </p>
+  </div>
+</div>
+
+
 {% assign ra_students = 
-   "Allison Cox,Anjali Kapadia,Cooper Garrard,Edgar Mora,Elita Odartei,Eli Zemach,Jakob Tweedel,Janos Bjoernvig,Kara Cousino,Keanu Parsa,Michael Avola,Taylor Yanchuk" 
+   "Allison Cox,Anjali Kapadia,Cooper Garrard,Edgar Mora,Elita Odartei,Jakob Tweedel,Janos Bjoernvig,Kara Cousino,Keanu Parsa,Michael Avola,Taylor Yanchuk" 
    | split: "," | sort %}
 {% for ra in ra_students %}
 <div class="person ra">
