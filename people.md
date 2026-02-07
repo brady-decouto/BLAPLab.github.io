@@ -64,6 +64,24 @@ permalink: /people/
   </div>
 </div>
 
+<!-- Alec Treacy -->
+<div class="person grad">
+  <img src="{{ '/assets/img/Treacy.png' | relative_url }}" alt="Alec Treacy">
+  <div class="person-text">
+    <h2 class="person-name">Alec Treacy, M.S.</h2>
+    <p>
+      Alec is a fourth-year doctoral candidate in Sport Psychology whose research 
+      examines psychological processes underlying performance in musicians and athletes. 
+      His work integrates frameworks from performance psychology, motivation science, and 
+      acceptance-based approaches to better understand how performers experience and manage 
+      performance anxiety. He prioritizes applied, data-driven research and regularly works 
+      with musicians and athletic populations to translate empirical findings into practical 
+      mental performance strategies that support motivation, well-being, and high-level 
+      performance.
+    </p>
+  </div>
+</div>
+
 <!-- Trey Wood -->
 <div class="person grad">
   <img src="{{ '/assets/img/Wood.png' | relative_url }}" alt="Trey Wood">
@@ -92,16 +110,6 @@ permalink: /people/
       interventions to enhance the student-athlete experience. He enjoys playing
       golf and soccer in his free time and is pursuing his doctorate beginning fall 2026.
     </p>
-  </div>
-</div>
-
-
-<!-- Alec Treacy -->
-<div class="person grad">
-  <img src="{{ '/assets/img/placeholder.png' | relative_url }}" alt="Alec Treacy">
-  <div class="person-text">
-    <h2 class="person-name">Alec Treacy</h2>
-    <p></p>
   </div>
 </div>
 
