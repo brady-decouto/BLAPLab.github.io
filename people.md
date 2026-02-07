@@ -65,10 +65,6 @@ permalink: /people/
 </div>
 
 
-<hr>
-<p style="color:red;">DEBUG: Alec should appear below</p>
-<hr>
-
 <!-- Alec Treacy -->
 <div class="person grad">
   <img src="{{ '/assets/img/Treacy.png' | relative_url }}" alt="Alec Treacy">
